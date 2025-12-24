@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "errormod",
+	"version": "${version}",
+	"name": "ErrorMod",
+	"description": "b站@ErrorMinecraft 这是我的模组",
+	"authors": [
+		"b站@ErrorMinecraft"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/errormod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.errorminecraft.errormod.ErrorMod"
+		],
+		"fabric-datagen": [
+			"com.errorminecraft.errormod.ErrorModDataGenerator"
+		],
+		"client": [
+			"com.errorminecraft.errormod.ErrorModClient"
+		]
+	},
+	"mixins": [
+		"errormod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.3",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
