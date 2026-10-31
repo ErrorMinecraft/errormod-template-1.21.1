@@ -1,3 +1,7 @@
 {
-  "item.errormod.reversed_bow": "反弓"
+  "item.errormod.diamond_upgrade_smithing_template": "钻石等级升级模板",
+  "item.errormod.iron_upgrade_smithing_template": "铁等级升级模板",
+  "item.errormod.golden_upgrade_smithing_template": "金等级升级模板",
+  "itemgroup.mod_group": "全模板",
+  "block.errormod.suspicious_iron_ore": "可疑的铁矿石"
 }

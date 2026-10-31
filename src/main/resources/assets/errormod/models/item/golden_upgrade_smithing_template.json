@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "errormod:item/reversed_bow"
+    "layer0": "errormod:item/golden_upgrade_smithing_template"
   }
 }

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "errormod:diamond_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "IMI",
+    "IDI",
+    "III"
+  ],
+  "result": {
+    "count": 2,
+    "id": "errormod:diamond_upgrade_smithing_template"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "G": {
+      "item": "minecraft:gold_ingot"
+    },
+    "C": {
+      "item": "minecraft:cobblestone"
+    },
+    "M": {
+      "item": "errormod:golden_upgrade_smithing_template"
+    }
+  },
+  "pattern": [
+    "CMC",
+    "CGC",
+    "CCC"
+  ],
+  "result": {
+    "count": 2,
+    "id": "errormod:golden_upgrade_smithing_template"
+  }
+}

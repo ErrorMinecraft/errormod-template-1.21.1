@@ -1,0 +1,41 @@
+{
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "alternatives",
+          "children": [
+            {
+              "type": "item",
+              "name": "errormod:arrow_block",
+              "conditions": [
+                {
+                  "condition": "match_tool",
+                  "predicate": {
+                    "items": "#minecraft:axes",
+                    "components": {
+                      "enchantments": {
+                          "minecraft:silk_touch": 1
+                      }
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "item",
+              "name": "minecraft:arrow",
+              "functions": [
+                {
+                  "function": "set_count",
+                  "count": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "inputs": ["minecraft:iron_ore"],
+  "output": "errormod:suspicious_iron_ore",
+  "probability": 0.05
+}
