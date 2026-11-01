@@ -29,8 +29,10 @@ public class ModItemGroups {
                             entries.add(ModItems.IRON_UPGRADE_SMITHING_TEMPLATE);
                             entries.add(ModItems.GOLDEN_UPGRADE_SMITHING_TEMPLATE);
                             entries.add(ModItems.MACE_UPGRADE_SMITHING_TEMPLATE);
+                            entries.add(ModItems.ENDER_EYE_UPGRADE_SMITHING_TEMPLATE);
                             entries.add(ModBlocks.SUSPICIOUS_IRON_ORE);
                             entries.add(ModBlocks.SUSPICIOUS_COPPER_BLOCK);
+                            entries.add(ModBlocks.SUSPICIOUS_MOSSY_STONE_BRICKS);
                         })
                         .build()
                 );

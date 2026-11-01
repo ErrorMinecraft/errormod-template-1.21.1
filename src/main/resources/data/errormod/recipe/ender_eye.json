@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": {
+    "item": "errormod:ender_eye_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:ender_pearl"
+  },
+  "addition": {
+    "item":"minecraft:blaze_powder"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:ender_eye"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "errormod:item/ender_eye_upgrade_smithing_template"
+  }
+}

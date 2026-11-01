@@ -8,5 +8,10 @@
     "inputs": ["minecraft:copper_block"],
     "output": "errormod:suspicious_copper_block",
     "probability": 0.02
+  },
+  {
+    "inputs": ["minecraft:mossy_stone_bricks"],
+    "output": "errormod:suspicious_mossy_stone_bricks",
+    "probability": 0.2
   }
 ]

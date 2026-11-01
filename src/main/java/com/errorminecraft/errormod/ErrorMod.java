@@ -8,12 +8,14 @@ import net.fabricmc.api.ModInitializer;
 
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.item.Item;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.StandardCopyOption;
+import java.util.Objects;
 
 public class ErrorMod implements ModInitializer {
 	public static final String MOD_ID = "errormod";
@@ -28,6 +30,7 @@ public class ErrorMod implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
 		ModBlockEntities.registerModBlockEntities();
@@ -35,10 +38,11 @@ public class ErrorMod implements ModInitializer {
 
 		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(ModBlocks.SUSPICIOUS_IRON_ORE);
 		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(ModBlocks.SUSPICIOUS_COPPER_BLOCK);
+		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(ModBlocks.SUSPICIOUS_MOSSY_STONE_BRICKS);
 
         try {
 			Files.createDirectories(FabricLoader.getInstance().getConfigDir().resolve("reliable_replacer"));
-			Files.copy(getClass().getResourceAsStream("/reliable_replacer_config.json"),FabricLoader.getInstance().getConfigDir().resolve("reliable_replacer").resolve("reliable_replacer_config.json"), StandardCopyOption.REPLACE_EXISTING);
+			Files.copy(Objects.requireNonNull(getClass().getResourceAsStream("/reliable_replacer_config.json")),FabricLoader.getInstance().getConfigDir().resolve("reliable_replacer").resolve("reliable_replacer_config.json"), StandardCopyOption.REPLACE_EXISTING);
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}

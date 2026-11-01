@@ -14,6 +14,7 @@ public class ModItems {
     public static final Item IRON_UPGRADE_SMITHING_TEMPLATE = registerItems("iron_upgrade_smithing_template", new Item(new Item.Settings()));
     public static final Item GOLDEN_UPGRADE_SMITHING_TEMPLATE = registerItems("golden_upgrade_smithing_template", new Item(new Item.Settings()));
     public static final Item MACE_UPGRADE_SMITHING_TEMPLATE = registerItems("mace_upgrade_smithing_template", new Item(new Item.Settings()));
+    public static final Item ENDER_EYE_UPGRADE_SMITHING_TEMPLATE = registerItems("ender_eye_upgrade_smithing_template",new Item(new Item.Settings()));
 
     private static Item registerItems(String id, Item item){
         //return Registry.register(Registries.ITEM, RegistryKey.of(Registries.ITEM.getKey(), Identifier.of(ErrorMod.MOD_ID,id)), item);
@@ -24,6 +25,7 @@ public class ModItems {
         fabricItemGroupEntries.add(IRON_UPGRADE_SMITHING_TEMPLATE);
         fabricItemGroupEntries.add(GOLDEN_UPGRADE_SMITHING_TEMPLATE);
         fabricItemGroupEntries.add(MACE_UPGRADE_SMITHING_TEMPLATE);
+        fabricItemGroupEntries.add(ENDER_EYE_UPGRADE_SMITHING_TEMPLATE);
     }
     public static void registerModItems(){
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(ModItems::addItemToIG);
