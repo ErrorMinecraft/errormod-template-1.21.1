@@ -11,6 +11,7 @@ import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 
+import static net.minecraft.block.Blocks.COPPER_BLOCK;
 import static net.minecraft.block.Blocks.IRON_ORE;
 
 public class ModBlocks{
@@ -25,6 +26,19 @@ public class ModBlocks{
                             .sounds(BlockSoundGroup.SUSPICIOUS_SAND)
                             .pistonBehavior(PistonBehavior.DESTROY),
                     "archaeology/suspicious_iron_ore"
+            )
+    );
+    public static final Block SUSPICIOUS_COPPER_BLOCK = register(
+            "suspicious_copper_block",
+            new ModBrushableBlock(
+                    COPPER_BLOCK,
+                    SoundEvents.ITEM_BRUSH_BRUSHING_SAND,
+                    SoundEvents.ITEM_BRUSH_BRUSHING_SAND_COMPLETE,
+                    AbstractBlock.Settings.create()
+                            .strength(0.25F)
+                            .sounds(BlockSoundGroup.SUSPICIOUS_SAND)
+                            .pistonBehavior(PistonBehavior.DESTROY),
+                    "archaeology/suspicious_copper_block"
             )
     );
 

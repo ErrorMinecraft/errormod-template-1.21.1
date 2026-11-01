@@ -11,10 +11,8 @@ import net.minecraft.block.entity.BlockEntityType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.StandardCopyOption;
 
 public class ErrorMod implements ModInitializer {
@@ -36,6 +34,7 @@ public class ErrorMod implements ModInitializer {
 		ModItemGroups.registerModItemGroups();
 
 		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(ModBlocks.SUSPICIOUS_IRON_ORE);
+		BlockEntityType.BRUSHABLE_BLOCK.addSupportedBlock(ModBlocks.SUSPICIOUS_COPPER_BLOCK);
 
         try {
 			Files.createDirectories(FabricLoader.getInstance().getConfigDir().resolve("reliable_replacer"));

@@ -2,6 +2,8 @@
   "item.errormod.diamond_upgrade_smithing_template": "Diamond Upgrade Smithing Template",
   "item.errormod.iron_upgrade_smithing_template": "Iron Upgrade Smithing Template",
   "item.errormod.golden_upgrade_smithing_template": "Golden Upgrade Smithing Template",
+  "item.errormod.mace_upgrade_smithing_template": "Mace Upgrade Smithing Template",
   "itemgroup.mod_group": "AllTheTemplate",
-  "block.errormod.suspicious_iron_ore": "Suspicious Iron Ore"
+  "block.errormod.suspicious_iron_ore": "Suspicious Iron Ore",
+  "block.errormod.suspicious_copper_block": "Suspicious Copper Block"
 }
